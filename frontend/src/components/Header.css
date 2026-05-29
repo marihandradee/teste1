@@ -1,0 +1,88 @@
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: var(--card-current);
+  border-bottom: 2px solid var(--primary);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  z-index: 1000;
+  transition: var(--transition);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.logo-icon { font-size: 2rem; }
+.logo-text { font-size: 1.6rem; font-weight: 800; letter-spacing: -1px; }
+.highlight { color: var(--accent); }
+.nav-links { display: flex; gap: 25px; }
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-current);
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.nav-links a:hover { color: var(--accent); }
+.actions-area { display: flex; align-items: center; gap: 20px; }
+.theme-toggle { background: none; border: none; font-size: 1.3rem; }
+.profile-wrapper { position: relative; }
+
+.avatar {
+  background: rgba(154, 3, 30, 0.1);
+  padding: 8px 15px;
+  border-radius: 50px;
+  border: 1px solid var(--secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: var(--card-current);
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  width: 220px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  padding: 10px;
+}
+
+.dropdown-info { padding: 8px; }
+.user-name { font-weight: bold; }
+.user-role { font-size: 0.8rem; color: var(--accent); text-transform: uppercase; }
+
+.dropdown-menu button {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 10px;
+  color: var(--text-current);
+  border-radius: 4px;
+}
+
+.dropdown-menu button:hover {
+  background: var(--primary);
+  color: white;
+}

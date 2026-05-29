@@ -1,0 +1,6 @@
+.services-crud-container { max-width: 800px; margin: 120px auto; padding: 0 20px; }
+.crud-form { display: flex; flex-direction: column; gap: 10px; margin-bottom: 30px; }
+.crud-form input { padding: 12px; border-radius: 6px; border: 1px solid var(--primary); background: var(--card-current); color: var(--text-current); }
+.crud-item { background: var(--card-current); padding: 15px; border-radius: 6px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; border-left: 4px solid var(--primary); }
+.btn-edit { background: var(--accent); border: none; padding: 6px 12px; margin-right: 5px; font-weight: bold; border-radius: 4px; }
+.btn-delete { background: var(--secondary); color: white; border: none; padding: 6px 12px; font-weight: bold; border-radius: 4px; }

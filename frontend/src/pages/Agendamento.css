@@ -1,0 +1,9 @@
+.agendamento-container { max-width: 800px; margin: 120px auto; padding: 0 20px; }
+.agendamento-form { display: flex; flex-direction: column; gap: 15px; margin-top: 20px; }
+.agendamento-form input, .agendamento-form select { padding: 12px; border-radius: 6px; border: 1px solid var(--primary); background: var(--card-current); color: var(--text-current); }
+.success-banner { background: var(--teal); color: white; padding: 15px; border-radius: 6px; text-align: center; }
+.premium-table { width: 100%; border-collapse: collapse; margin-top: 20px; background: var(--card-current); }
+.premium-table th, .premium-table td { padding: 12px; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.1); }
+.status-badge { padding: 4px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; }
+.status-badge.pendente { background: var(--accent); color: black; }
+.status-badge.aceito { background: var(--teal); color: white; }

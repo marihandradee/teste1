@@ -1,0 +1,65 @@
+:root {
+  --primary: #5F0F40;
+  --secondary: #9A031E;
+  --accent: #FB8B24;
+  --orange-dark: #E36414;
+  --teal: #0F4C5C;
+  --bg-dark: #0f0f14;
+  --card-dark: #16161f;
+  --text-dark: #f3f4f6;
+  --bg-light: #f8f9fa;
+  --card-light: #ffffff;
+  --text-light: #1f2937;
+  
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body.dark {
+  --bg-current: var(--bg-dark);
+  --card-current: var(--card-dark);
+  --text-current: var(--text-dark);
+  color-scheme: dark;
+}
+
+body.light {
+  --bg-current: var(--bg-light);
+  --card-current: var(--card-light);
+  --text-current: var(--text-light);
+  color-scheme: light;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--bg-current);
+  color: var(--text-current);
+  transition: var(--transition);
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.premium-btn {
+  background: linear-gradient(135deg, var(--secondary), var(--primary));
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(154, 3, 30, 0.3);
+}
+
+.premium-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(154, 3, 30, 0.5);
+}

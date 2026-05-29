@@ -1,0 +1,7 @@
+.admin-container { max-width: 1000px; margin: 120px auto; padding: 0 20px; }
+.metrics-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 40px; }
+.metric-card { background: var(--card-current); padding: 20px; border-radius: 8px; border-left: 4px solid var(--accent); }
+.orders-list { display: flex; flex-direction: column; gap: 15px; }
+.order-card { background: var(--card-current); padding: 20px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+.btn-accept { background: var(--teal); color: white; border: none; padding: 8px 15px; border-radius: 4px; margin-right: 10px; font-weight: bold; }
+.btn-deny { background: var(--secondary); color: white; border: none; padding: 8px 15px; border-radius: 4px; font-weight: bold; }
