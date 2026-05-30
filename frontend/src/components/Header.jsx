@@ -3,6 +3,9 @@ import { Link, useNavigate } from 'react-router-dom';
 import { AppContext } from '../context/AppContext';
 import './Header.css';
 
+// 👈 IMPORTANTE: Puxando o seu novo arquivo .jpg da pasta assets
+import logoImg from '../assets/logo.png'; 
+
 export default function Header() {
     const { user, logout, theme, toggleTheme } = useContext(AppContext);
     const [dropdown, setDropdown] = useState(false);
@@ -12,7 +15,10 @@ export default function Header() {
         <header className="main-header">
             <div className="header-container">
                 <div className="logo-area" onClick={() => navigate('/')}>
-                    <span className="logo-icon">🏎️</span>
+                    
+                    {/* Sua logo.jpg aplicada aqui */}
+                    <img src={logoImg} alt="Logo Vision Car" className="logo-img" />
+                    
                     <h1 className="logo-text">Vision <span className="highlight">Car</span></h1>
                 </div>
 
@@ -26,7 +32,9 @@ export default function Header() {
                         <>
                             <Link to="/">Home</Link>
                             <a href="#servicos">Serviços</a>
-                            <Link to="/agendamento">Agendar</Link>
+                            {/* 👇 NOVO LINK ADICIONADO */}
+                             <a href="#localizacao">Localização</a> 
+                             <Link to="/agendamento">Agendamento</Link>
                         </>
                     )}
                 </nav>
